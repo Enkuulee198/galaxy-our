@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(./zurag/galaxy.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+div {
+  height: var(--toirog-size);
+  width: var(--toirog-size);
+  background-image: var(--bg-image);
+}
+.orbit {
+  border-radius: 50%;
+  border: 2.5px white dashed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ergelt var(--toirog-ergelt) linear infinite;
+}
+.gol {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.solar-sistem {
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+}
+.gol-image {
+  background: var(--bg-image) center/cover no-repeat;
+  transform: translate(450px, 450px);
+}
+.garig {
+  width: var(--garig);
+  height: var(--garig);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  top: 0;
+  position: absolute;
+  animation: ergelt var(--ergelt) linear infinite;
+}
+@keyframes ergelt {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
